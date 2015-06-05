@@ -18,7 +18,7 @@ describe('postcss-themer', function () {
      // Write tests here
 
     it('replaces amin with the black hex.', function (done) {
-        test('a{ color: aminx }', 'a{ color: #000 }', { }, done);
+        test('a{ color: amin }', 'a{ color: #000 }', { }, done);
     });
 
 });
