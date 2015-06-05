@@ -3,8 +3,8 @@
 [PostCSS] plugin themer reads through the css file and spits out theme files by swaping colors and fonts.
 
 [PostCSS]: https://github.com/postcss/postcss
-[ci-img]:  https://travis-ci.org/aminmeyghani/postcss-themer.svg
-[ci]:      https://travis-ci.org/aminmeyghani/postcss-themer
+[ci-img]:  https://travis-ci.org/aminmeyghani/css-themer.svg
+[ci]:      https://travis-ci.org/aminmeyghani/css-themer
 
 ```css
 .foo {
