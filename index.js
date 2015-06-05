@@ -8,6 +8,10 @@ module.exports = postcss.plugin('postcss-themer', function (opts) {
     return function (css) {
 
         // Transform CSS AST here
+        css.replaceValues('amin', {fast: 'amin'}, function (origin, name) {
+            console.log('origin is: ', origin, 'name is', name);
+            return '#000';
+        });
 
     };
 });

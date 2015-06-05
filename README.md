@@ -8,13 +8,13 @@
 
 ```css
 .foo {
-    /* Input example */
+	color: amin;
 }
 ```
 
 ```css
 .foo {
-  /* Output example */
+  color: #000;
 }
 ```
 

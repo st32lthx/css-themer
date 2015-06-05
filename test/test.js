@@ -1,10 +1,10 @@
 var postcss = require('postcss');
 var expect  = require('chai').expect;
 
-var plugin = require('../');
+var themer = require('../');
 
 var test = function (input, output, opts, done) {
-    postcss([ plugin(opts) ]).process(input).then(function (result) {
+    postcss([ themer(opts) ]).process(input).then(function (result) {
         expect(result.css).to.eql(output);
         expect(result.warnings()).to.be.empty;
         done();
@@ -15,10 +15,10 @@ var test = function (input, output, opts, done) {
 
 describe('postcss-themer', function () {
 
-    /* Write tests here
+     // Write tests here
 
-    it('does something', function (done) {
-        test('a{ }', 'a{ }', { }, done);
-    });*/
+    it('replaces amin with the black hex.', function (done) {
+        test('a{ color: amin }', 'a{ color: #000 }', { }, done);
+    });
 
 });
